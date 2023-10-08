@@ -1,3 +1,3 @@
-# ratsnlp
+# cookienlp
 
-자연어 처리 실습을 위한 패키지입니다. 구글 코랩(colab) 환경에서 동작할 수 있도록 작성하였습니다.
+ratsgo님의 ratsnlp를 테스트하고 수정하기 위해 임시 제작
