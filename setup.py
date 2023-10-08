@@ -8,22 +8,22 @@ def requirements():
 
 
 setuptools.setup(
-    name="ratsnlp",
-    version="1.0.53",
+    name="cookienlp",
+    version="1.0",
     license='MIT',
-    author="ratsgo",
-    author_email="ratsgo@naver.com",
-    description="tools for Natural Language Processing",
+    author="sjang01",
+    author_email="sjang01@naver.com",
+    description="copy and test from ratsgo/ratsnlp (tools for Natural Language Processing)",
     long_description=open('README.md').read(),
-    url="https://github.com/ratsgo/ratsnlp",
+    url="https://github.com/sjang01/cookienlp",
     packages=setuptools.find_packages(),
     include_package_data=True,
     package_data={
-        'ratsnlp.nlpbook.classification': ['*.html'],
-        'ratsnlp.nlpbook.ner': ['*.html'],
-        'ratsnlp.nlpbook.qa': ['*.html'],
-        'ratsnlp.nlpbook.paircls': ['*.html'],
-        'ratsnlp.nlpbook.generation': ['*.html'],
+        'cookienlp.nlpbook.classification': ['*.html'],
+        'cookienlp.nlpbook.ner': ['*.html'],
+        'cookienlp.nlpbook.qa': ['*.html'],
+        'cookienlp.nlpbook.paircls': ['*.html'],
+        'cookienlp.nlpbook.generation': ['*.html'],
     },
     install_requires=requirements(),
     classifiers=[
