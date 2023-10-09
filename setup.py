@@ -9,7 +9,7 @@ def requirements():
 
 setuptools.setup(
     name="cookienlp",
-    version="1.0.1",
+    version="1.0.2",
     license='MIT',
     author="sjang01",
     author_email="sjang01@naver.com",

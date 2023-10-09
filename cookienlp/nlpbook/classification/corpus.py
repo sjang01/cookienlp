@@ -53,7 +53,32 @@ class NsmcCorpus:
     def num_labels(self):
         return len(self.get_labels())
 
+class NewsCorpus:
 
+    def __init__(self):
+        pass
+
+    def get_examples(self, data_root_path, mode):
+        print(data_root_path)
+        print(mode)
+        data_fpath = os.path.join(data_root_path, f"{mode}.txt")
+        lines = open(data_fpath, "r", encoding="utf-8").readlines()
+        examples = []
+        for (i, line) in enumerate(lines):
+            if i == 0:
+                continue
+            text_a_parts, label = line.strip().split(",")  # 마지막 값만 label로, 나머지는 text_a_parts로 분리
+            text_a = ",".join(text_a_parts).strip()  # text_a_parts를 다시 하나의 문자열로 합침
+            examples.append(ClassificationExample(text_a=text_a, text_b=None, label=label))
+        return examples
+
+    def get_labels(self):
+        return ["국제", "경제", "정치", "사회", "문화"]
+
+    @property
+    def num_labels(self):
+        return len(self.get_labels())
+    
 def _convert_examples_to_classification_features(
         examples: List[ClassificationExample],
         tokenizer: PreTrainedTokenizer,
