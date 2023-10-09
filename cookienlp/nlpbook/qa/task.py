@@ -1,8 +1,8 @@
 from transformers import PreTrainedModel
 from transformers.optimization import AdamW
-from ratsnlp.nlpbook.metrics import accuracy
+from cookienlp.nlpbook.metrics import accuracy
 from pytorch_lightning import LightningModule
-from ratsnlp.nlpbook.qa import QATrainArguments
+from cookienlp.nlpbook.qa import QATrainArguments
 from torch.optim.lr_scheduler import ExponentialLR
 
 

@@ -8,11 +8,11 @@ from typing import List, Optional
 from dataclasses import dataclass
 from transformers import BertTokenizer
 from torch.utils.data.dataset import Dataset
-from ratsnlp.nlpbook.ner import NERTrainArguments
+from cookienlp.nlpbook.ner import NERTrainArguments
 from transformers.tokenization_utils_base import PaddingStrategy, TruncationStrategy
 
 
-logger = logging.getLogger("ratsnlp")
+logger = logging.getLogger("cookienlp")
 
 
 # 자체 제작 NER 코퍼스 기준의 레이블 시퀀스를 만들기 위한 ID 체계

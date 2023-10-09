@@ -1,10 +1,10 @@
 import os
 import json
 import logging
-from ratsnlp.nlpbook.classification.corpus import ClassificationExample
+from cookienlp.nlpbook.classification.corpus import ClassificationExample
 
 
-logger = logging.getLogger("ratsnlp")
+logger = logging.getLogger("cookienlp")
 
 
 class KlueNLICorpus:

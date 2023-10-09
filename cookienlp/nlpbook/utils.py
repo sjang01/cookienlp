@@ -70,7 +70,7 @@ REMOTE_MODEL_MAP = {
     },
 }
 GOOGLE_DRIVE_URL = "https://docs.google.com/uc?export=download"
-logger = logging.getLogger("ratsnlp")  # pylint: disable=invalid-name
+logger = logging.getLogger("cookienlp")  # pylint: disable=invalid-name
 
 
 def save_response_content(response, save_path):

@@ -1,9 +1,9 @@
 from transformers import PreTrainedModel
 from transformers.optimization import AdamW
-from ratsnlp.nlpbook.metrics import accuracy
+from cookienlp.nlpbook.metrics import accuracy
 from pytorch_lightning import LightningModule
 from torch.optim.lr_scheduler import ExponentialLR
-from ratsnlp.nlpbook.classification.arguments import ClassificationTrainArguments
+from cookienlp.nlpbook.classification.arguments import ClassificationTrainArguments
 
 
 class ClassificationTask(LightningModule):

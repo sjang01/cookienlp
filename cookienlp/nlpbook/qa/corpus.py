@@ -11,10 +11,10 @@ from typing import List, Optional
 from multiprocessing import Pool, cpu_count
 from transformers import PreTrainedTokenizer
 from torch.utils.data.dataset import Dataset
-from ratsnlp.nlpbook.qa import QATrainArguments
+from cookienlp.nlpbook.qa import QATrainArguments
 
 
-logger = logging.getLogger("ratsnlp")
+logger = logging.getLogger("cookienlp")
 
 
 @dataclass

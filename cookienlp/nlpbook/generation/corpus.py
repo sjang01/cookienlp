@@ -8,10 +8,10 @@ from dataclasses import dataclass
 from typing import List, Optional
 from torch.utils.data.dataset import Dataset
 from transformers import PreTrainedTokenizerFast
-from ratsnlp.nlpbook.generation.arguments import GenerationTrainArguments
+from cookienlp.nlpbook.generation.arguments import GenerationTrainArguments
 
 
-logger = logging.getLogger("ratsnlp")
+logger = logging.getLogger("cookienlp")
 
 
 @dataclass
